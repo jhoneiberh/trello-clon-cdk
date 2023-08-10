@@ -39,10 +39,152 @@
     </div>
   </div>
 </nav>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<button
+  type="button"
+  class="flex rounded-full"
+  aria-expanded="false"
+  type="button"
+  (click)="isOpenBody = !isOpenBody"
+  cdkOverlayOrigin
+  #bodyOverlay="cdkOverlayOrigin">
+  <img
+    class="h-8 w-8 rounded-full object-cover"
+    src="https://images.unsplash.com/photo-1500522144261-ea64433bbe27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+    alt="user photo" />
+</button>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
+<p>Hola</p>
 
 <ng-template
   cdkConnectedOverlay
   [cdkConnectedOverlayOrigin]="menuOverlay"
   [cdkConnectedOverlayOpen]="isOpen">
-  <h1>Hola Mundo</h1>
+  <div
+    class="z-50 my-4 w-60 list-none divide-y divide-gray-100 rounded bg-white text-base shadow">
+    <div class="flex justify-between px-4 py-3">
+      <span class="block text-center text-sm text-gray-900">Account</span>
+      <button (click)="isOpen = !isOpen" class="block text-sm text-gray-900">
+        <fa-icon [icon]="faClose"></fa-icon>
+      </button>
+    </div>
+    <div class="flex items-center space-x-4 px-4 py-3">
+      <img
+        class="h-10 w-10 rounded-full object-cover"
+        src="https://images.unsplash.com/photo-1500522144261-ea64433bbe27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+        alt="" />
+      <div class="space-y-1">
+        <div>Jese Leos</div>
+        <div class="text-sm text-gray-500">nico@gmail.com</div>
+      </div>
+    </div>
+    <ul class="py-1">
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
+          >Profile</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
+          >Activity</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
+          >Cards</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
+          >Settings</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
+          >Sign out</a
+        >
+      </li>
+    </ul>
+    <ul class="py-1">
+      <li>
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700">Log out</a>
+      </li>
+    </ul>
+  </div>
+</ng-template>
+
+<ng-template
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="bodyOverlay"
+  [cdkConnectedOverlayOpen]="isOpenBody">
+  <div
+    class="z-50 my-4 list-none divide-y divide-gray-100 rounded bg-white text-base shadow">
+    <div class="px-4 py-3">
+      <span class="block text-sm text-gray-900">Bonnie Green</span>
+      <span class="block truncate text-sm font-medium text-gray-500"
+        >name@flowbite.com</span
+      >
+    </div>
+    <ul class="py-1" aria-labelledby="user-menu-button">
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
+          >Dashboard</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
+          >Settings</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
+          >Earnings</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
+          >Sign out</a
+        >
+      </li>
+    </ul>
+  </div>
 </ng-template>
