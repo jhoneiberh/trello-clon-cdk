@@ -1,0 +1,48 @@
+<nav class="border-gray-200 bg-sky-700 px-6 shadow-md">
+  <div class="flex flex-wrap items-center justify-between">
+    <div class="flex items-center">
+      <a routerLink="/">
+        <img
+          loading="lazy"
+          class="mr-8 w-20"
+          src="assets/png/logo-gradient-white-trello.png"
+          alt="logo" />
+      </a>
+      <div class="flex items-center">
+        <ul class="flex items-center space-x-2 text-sm font-medium">
+          <li>
+            <a class="block px-4 py-3 text-white">Workspaces</a>
+          </li>
+          <li>
+            <a class="block px-4 py-3 text-white">Recent</a>
+          </li>
+          <li>
+            <app-btn typeBtn="button" color="sky" class="px-2">Create</app-btn>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <button
+        type="button"
+        class="flex rounded-full"
+        aria-expanded="false"
+        type="button"
+        (click)="isOpen = !isOpen"
+        cdkOverlayOrigin
+        #menuOverlay="cdkOverlayOrigin">
+        <img
+          class="h-8 w-8 rounded-full object-cover"
+          src="https://images.unsplash.com/photo-1500522144261-ea64433bbe27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+          alt="user photo" />
+      </button>
+    </div>
+  </div>
+</nav>
+
+<ng-template
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="menuOverlay"
+  [cdkConnectedOverlayOpen]="isOpen">
+  <h1>Hola Mundo</h1>
+</ng-template>

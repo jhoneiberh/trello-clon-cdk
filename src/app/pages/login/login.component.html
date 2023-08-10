@@ -1,0 +1,78 @@
+<div class="relative h-screen w-screen bg-gray-50 sm:bg-gray-700">
+  <div class="absolute hidden h-full w-full sm:block">
+    <img
+      loading="lazy"
+      class="absolute bottom-0 left-0 w-60 lg:w-96"
+      src="assets/svg/vertical-logo-onecolor-neutral-atlassian.svg"
+      alt="background" />
+  </div>
+  <div class="relative m-auto w-full sm:w-7/12 md:w-6/12 lg:w-4/12">
+    <header class="flex justify-center pb-2 pt-6">
+      <img
+        class="w-48"
+        src="assets/png/logo-gradient-blue-trello.png"
+        alt="trello logo" />
+    </header>
+    <div class="rounded bg-white px-6 py-4 shadow-md">
+      <div class="mb-4 border-b border-gray-300 pb-6">
+        <h2 class="pb-8 pt-4 text-center font-semibold">Log In to Trello</h2>
+        <form class="space-y-4" action="" novalidate>
+          <div class="relative">
+            <input
+              type="email"
+              class="w-full rounded border-2 border-gray-300 bg-gray-100"
+              placeholder="Enter email"
+              name=""
+              id="" />
+          </div>
+          <div class="relative">
+            <input
+              type="password"
+              class="w-full rounded border-2 border-gray-300 bg-gray-100"
+              placeholder="Enter password"
+              name=""
+              id="" />
+          </div>
+          <div>
+            <app-btn [typeBtn]="'submit'" [colorBtn]="'success'"
+              >Log In</app-btn
+            >
+          </div>
+        </form>
+      </div>
+      <div
+        class="flex items-center justify-center space-x-0 space-y-2 text-sm md:space-x-2">
+        <a routerLink="/forgot-password" class="text-blue-600 hover:underline"
+          >Can't log in?</a
+        >
+        <span class="text-black">&#183;</span>
+        <a routerLink="/register" class="text-blue-600 hover:underline"
+          >Sign up for an account</a
+        >
+      </div>
+    </div>
+    <!-- <div class="mt-4 flex justify-center space-x-1 text-xs text-blue-600">
+      <a href="" class="hover:underline">Privacy Policy</a>
+      <a href="" class="hover:underline"
+        ><span class="text-black">&#183;&#160;</span>Terms of Service</a
+      >
+    </div> -->
+    <div
+      class="mb-10 mt-6 flex flex-col items-center gap-y-4 border-t border-gray-300 pt-5">
+      <img
+        class="w-36"
+        src="assets/png/horizontal-logo-onecolor-blue-atlassian.png"
+        alt="logo atlassian" />
+      <div class="flex gap-x-3 text-sm font-normal text-gray-500">
+        <a href="" class="hover:underline">Templates</a>
+        <a href="" class="hover:underline">Pricing</a>
+        <a href="" class="hover:underline">Apps</a>
+        <a href="" class="hover:underline">Jobs</a>
+        <a href="" class="hover:underline">Blog</a>
+        <a href="" class="hover:underline">Developers</a>
+        <a href="" class="hover:underline">About</a>
+        <a href="" class="hover:underline">Help</a>
+      </div>
+    </div>
+  </div>
+</div>
